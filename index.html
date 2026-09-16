@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="sr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="ATELIER — premium beauty studio. Nega lica, obrve, trepavice i rituali lepote.">
+<title>ATELIER — Beauty Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=Sora:wght@400;500;600&family=Petrona:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+.demo-tag{font:9px var(--mono);letter-spacing:.1em;border:1px solid currentColor;padding:2px 7px;border-radius:10px;margin-left:8px;opacity:.6;vertical-align:middle;text-transform:uppercase;}
+:root{--ink:#171512;--ivory:#f2eee7;--stone:#d9d1c5;--muted:#777168;--espresso:#29241f;--accent:#2F4A3D;--accent-soft:#E3E9E4;--serif:"Petrona",serif;--sans:Sora,sans-serif;--mono:"DM Mono",monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--sans)}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.wrap{width:min(1180px,calc(100% - 48px));margin:auto}.eyebrow{font:10px var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}.serif{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--accent)}
+nav{height:74px;padding:0 28px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #d7d0c5;position:fixed;top:0;width:100%;z-index:20;background:#f2eee7e8;backdrop-filter:blur(10px)}.logo{font-size:17px;letter-spacing:.22em;font-weight:600}.navlinks{display:flex;gap:28px;font-size:10px;letter-spacing:.13em;text-transform:uppercase}.navlinks a:hover{opacity:.5}.nav-cta{padding:11px 15px;border:1px solid var(--ink);font-size:10px;letter-spacing:.12em;text-transform:uppercase}.menu{display:none;border:0;background:none;font-size:22px}
+.hero{padding:155px 0 90px;min-height:100vh;display:grid;grid-template-columns:.72fr 1.28fr;gap:7vw;align-items:center}.hero h1{font-size:clamp(62px,9vw,126px);line-height:.84;letter-spacing:-.075em;font-weight:500;margin:20px 0 28px}.hero h1 em{display:block;margin-left:18%;font-size:.8em}.hero-copy p{font-size:14px;line-height:1.8;color:var(--muted);max-width:360px}.actions{display:flex;gap:12px;margin-top:30px}.btn{height:47px;padding:0 22px;border:1px solid var(--accent);background:var(--accent);color:var(--ivory);font-size:10px;letter-spacing:.13em;text-transform:uppercase;cursor:pointer}.btn.alt{background:transparent;color:var(--ink)}.hero-visual{height:76vh;position:relative}.hero-visual img{height:100%;width:100%;object-fit:cover}.hero-visual:after{content:"01";position:absolute;bottom:-26px;right:-25px;font:11px var(--mono);color:#918a80}.vertical{position:absolute;left:-28px;top:20%;writing-mode:vertical-rl;font:10px var(--mono);letter-spacing:.17em;color:#8c8479}
+.statement{padding:145px 0;background:var(--espresso);color:var(--ivory)}.statement-grid{display:grid;grid-template-columns:1fr 2fr;gap:8vw}.statement h2{font-size:clamp(45px,6.5vw,88px);line-height:.92;letter-spacing:-.065em;margin:0}.statement-copy{font-size:18px;line-height:1.75;max-width:650px}.statement-copy strong{font-family:var(--serif);font-style:italic;font-weight:500;font-size:25px}
+.services{padding:145px 0}.head{display:flex;justify-content:space-between;align-items:end;margin-bottom:60px}.head h2,.gallery h2,.booking h2{font-size:clamp(55px,7vw,94px);line-height:.86;letter-spacing:-.065em;font-weight:500;margin:17px 0 0}.service{display:grid;grid-template-columns:55px 1fr 110px 95px;gap:18px;align-items:center;padding:23px 0;border-top:1px solid var(--stone)}.service:last-child{border-bottom:1px solid var(--stone)}.service .num,.service .time{font:10px var(--mono);color:var(--muted)}.service h3{font-size:19px;font-weight:500;margin:0 0 5px}.service p{margin:0;color:var(--muted);font-size:12px}.price{text-align:right;font-size:17px}.service:hover h3{font-family:var(--serif);font-style:italic}
+.signature{padding:0 0 145px}.signature-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:12px}.signature-card{position:relative;min-height:580px;overflow:hidden}.signature-card img{width:100%;height:100%;object-fit:cover}.signature-card.small{min-height:280px}.signature-stack{display:grid;grid-template-rows:1fr 1fr;gap:12px}.signature-label{position:absolute;left:20px;bottom:18px;color:white;font-size:11px;letter-spacing:.12em;text-transform:uppercase;text-shadow:0 1px 10px #000}
+.about{padding:145px 0;display:grid;grid-template-columns:.9fr 1.1fr;gap:9vw;align-items:center}.about-photo{height:650px}.about-photo img{width:100%;height:100%;object-fit:cover}.about h2{font-size:clamp(50px,7vw,92px);line-height:.88;letter-spacing:-.06em;font-weight:500;margin:18px 0 30px}.about p{color:var(--muted);line-height:1.85;max-width:520px}.marks{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:50px}.marks div{border-top:1px solid var(--stone);padding-top:12px}.marks strong{font:28px var(--serif);font-style:italic}.marks span{display:block;font:9px var(--mono);color:var(--muted);text-transform:uppercase;margin-top:5px}
+.gallery{padding:145px 0;background:#e5dfd6}.gallery-grid{margin-top:60px;display:grid;grid-template-columns:1fr .72fr 1fr;grid-template-rows:300px 390px;gap:12px}.gallery-grid figure{margin:0;overflow:hidden;position:relative}.gallery-grid figure:nth-child(2){margin-top:65px}.gallery-grid figure:nth-child(4){grid-column:2/4}.gallery-grid img{width:100%;height:100%;object-fit:cover;transition:.7s}.gallery-grid figure:hover img{transform:scale(1.04)}.gallery-grid figcaption{position:absolute;left:15px;bottom:13px;font:9px var(--mono);letter-spacing:.15em;color:white;text-shadow:0 1px 8px #000}
+.booking{padding:145px 0;background:var(--ink);color:var(--ivory)}.booking-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:9vw}.booking h2{margin-top:18px}.booking-copy{color:#aaa49a;line-height:1.8;max-width:390px}.form{display:grid;grid-template-columns:1fr 1fr;gap:20px}.field label{display:block;font:9px var(--mono);letter-spacing:.15em;text-transform:uppercase;color:#aaa49a;margin-bottom:8px}.field input,.field select,.field textarea{width:100%;border:0;border-bottom:1px solid #57524c;background:transparent;color:var(--ivory);padding:12px 0;outline:none;border-radius:0}.field select option{color:#111}.field textarea{min-height:90px;resize:vertical}.full{grid-column:1/-1}.form .btn{margin-top:10px;background:var(--ivory);color:var(--ink);border-color:var(--ivory);grid-column:1/-1}.success{display:none;border:1px solid #716b63;padding:16px;font-size:12px;grid-column:1/-1}
+.contact{padding:105px 0 40px}.contact-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:30px}.contact-logo{font-size:clamp(50px,7vw,90px);letter-spacing:-.07em}.contact h4{font:9px var(--mono);letter-spacing:.15em;color:var(--muted);margin:7px 0 13px}.contact p{font-size:12px;line-height:1.8;margin:0}.footer{border-top:1px solid var(--stone);margin-top:80px;padding-top:18px;display:flex;justify-content:space-between;font:9px var(--mono);color:var(--muted);letter-spacing:.1em}
+.reveal{opacity:0;transform:translateY(24px);transition:.8s}.reveal.visible{opacity:1;transform:none}
+@media(max-width:760px){.wrap{width:calc(100% - 30px)}nav{padding:0 15px}.navlinks{display:none;position:absolute;top:73px;left:15px;right:15px;background:var(--ivory);padding:20px;flex-direction:column;gap:20px;border:1px solid var(--stone)}.navlinks.open{display:flex}.nav-cta{display:none}.menu{display:block}.hero{display:block;padding:125px 15px 45px}.hero h1{font-size:22vw}.hero-visual{height:58vh;margin-top:45px}.vertical{display:none}.statement,.services,.about,.gallery,.booking{padding:90px 0}.statement-grid,.about,.booking-grid{grid-template-columns:1fr;gap:45px}.statement h2,.about h2,.booking h2{font-size:59px}.head{display:block}.service{grid-template-columns:35px 1fr auto}.service .time{grid-column:2}.price{font-size:15px}.signature{padding-bottom:90px}.signature-grid{grid-template-columns:1fr}.signature-card{min-height:450px}.signature-card.small{min-height:260px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:230px 310px 230px}.gallery-grid figure:nth-child(2){margin-top:0}.gallery-grid figure:nth-child(4){grid-column:1/-1}.form{grid-template-columns:1fr}.full,.form .btn,.success{grid-column:auto}.about-photo{height:470px}.marks{gap:10px}.contact-grid{grid-template-columns:1fr 1fr}.contact-logo{grid-column:1/-1}.footer{display:block;line-height:2.2}}
+</style>
+</head>
+<body>
+<nav><a class="logo" href="#home">ATELIER<span class="demo-tag">DEMO</span></a><div class="navlinks" id="links"><a href="#services">Usluge</a><a href="#about">O nama</a><a href="#gallery">Galerija</a><a href="#booking">Zakazivanje</a><a href="#contact">Kontakt</a></div><a class="nav-cta" href="#booking">Zakaži termin</a><button class="menu" id="menu" aria-label="Meni">☰</button></nav>
+<main id="home">
+<section class="wrap hero"><div class="hero-copy reveal"><div class="eyebrow">Beauty studio / Est. 2026</div><h1>THE<br><em class="serif">ritual.</em></h1><p>Lepota ne mora da bude glasna. ATELIER je mali beauty studio za preciznu negu, dobar osećaj i rezultate koji izgledaju prirodno.</p><div class="actions"><a class="btn" href="#booking">Zakaži termin</a><a class="btn alt" href="#services">Usluge</a></div></div><div class="hero-visual reveal"><img src="https://images.pexels.com/photos/3762445/pexels-photo-3762445.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Beauty detalj usana"><span class="vertical">SKIN / FORM / RITUAL</span></div></section>
+<section class="statement"><div class="wrap statement-grid reveal"><div><div class="eyebrow">01 / Philosophy</div><h2>Bez viška.<br><span class="serif">Samo ti.</span></h2></div><div class="statement-copy">Ne verujemo u tretmane koje biraš zato što su trenutno svuda. Verujemo u dobar pregled kože, mirnu ruku i plan koji ima smisla za tebe. <strong>Manje obećanja. Više pažnje.</strong></div></div></section>
+<section class="services" id="services"><div class="wrap"><div class="head reveal"><div><div class="eyebrow">02 / Services</div><h2>Usluge<span class="serif">.</span></h2></div><div class="eyebrow">Care / detail / time</div></div>
+<div class="service reveal"><span class="num">01</span><div><h3>Signature Facial</h3><p>Individualno prilagođena nega i dubinska hidratacija.</p></div><span class="time">60 MIN</span><span class="price">4.200 RSD</span></div>
+<div class="service reveal"><span class="num">02</span><div><h3>Skin Ritual</h3><p>Čišćenje, eksfolijacija i završna nega prema potrebama kože.</p></div><span class="time">75 MIN</span><span class="price">5.000 RSD</span></div>
+<div class="service reveal"><span class="num">03</span><div><h3>Brow Architecture</h3><p>Oblikovanje obrva prema proporcijama lica.</p></div><span class="time">30 MIN</span><span class="price">1.600 RSD</span></div>
+<div class="service reveal"><span class="num">04</span><div><h3>Lash Lift</h3><p>Podizanje i definicija trepavica bez svakodnevnog stilizovanja.</p></div><span class="time">60 MIN</span><span class="price">3.200 RSD</span></div>
+<div class="service reveal"><span class="num">05</span><div><h3>Hands / Nails</h3><p>Uredan, čist manikir sa završnom negom.</p></div><span class="time">50 MIN</span><span class="price">2.200 RSD</span></div>
+</div></section>
+<section class="signature"><div class="wrap signature-grid"><div class="signature-card reveal"><img src="https://images.pexels.com/photos/3738349/pexels-photo-3738349.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Nega lica"><div class="signature-label">01 / Signature Facial</div></div><div class="signature-stack"><div class="signature-card small reveal"><img src="https://images.pexels.com/photos/19242406/pexels-photo-19242406.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Beauty detalj"><div class="signature-label">02 / Detail</div></div><div class="signature-card small reveal"><img src="https://images.pexels.com/photos/3736397/pexels-photo-3736397.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Beauty ritual"><div class="signature-label">03 / Ritual</div></div></div></div></section>
+<section class="about" id="about"><div class="wrap about"><div class="about-photo reveal"><img src="https://images.pexels.com/photos/3735619/pexels-photo-3735619.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Beauty studio detalj"></div><div class="reveal"><div class="eyebrow">03 / About</div><h2>Koža ima<br><span class="serif">svoj ritam.</span></h2><p>ATELIER je nastao iz jednostavne ideje: da tretman ne bude još jedna obaveza, već sat vremena u kome se neko zaista bavi tobom.</p><p>Radimo pažljivo, biramo ono što je potrebno i ne zatrpavamo rutinu sa deset koraka kada su dovoljna tri dobra.</p><div class="marks"><div><strong>01</strong><span>Individualno</span></div><div><strong>02</strong><span>Pažljivo</span></div><div><strong>03</strong><span>Bez žurbe</span></div></div></div></div></section>
+<section class="gallery" id="gallery"><div class="wrap"><div class="reveal"><div class="eyebrow">04 / Atmosphere</div><h2>Galerija<span class="serif">.</span></h2></div><div class="gallery-grid"><figure class="reveal"><img src="https://images.pexels.com/photos/3735655/pexels-photo-3735655.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Beauty enterijer"><figcaption>SPACE / 01</figcaption></figure><figure class="reveal"><img src="https://images.pexels.com/photos/3993398/pexels-photo-3993398.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Beauty detalj"><figcaption>TEXTURE / 02</figcaption></figure><figure class="reveal"><img src="https://images.pexels.com/photos/7755212/pexels-photo-7755212.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Manikir"><figcaption>DETAIL / 03</figcaption></figure><figure class="reveal"><img src="https://images.pexels.com/photos/29376577/pexels-photo-29376577.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Beauty editorial"><figcaption>RITUAL / 04</figcaption></figure></div></div></section>
+<section class="booking" id="booking"><div class="wrap booking-grid"><div class="reveal"><div class="eyebrow">05 / Booking</div><h2>Vaš<br><span class="serif">termin.</span></h2><p class="booking-copy">Izaberite tretman i termin koji vam odgovara. Ova forma stvarno radi — probajte je, dobićete pravi odgovor na mejl.</p></div><form class="form reveal" id="form"><div class="field"><label>Ime i prezime</label><input required name="name" placeholder="Vaše ime"></div><div class="field"><label>Telefon</label><input required name="phone" type="tel" placeholder="+381 ..."></div><div class="field"><label>Usluga</label><select required name="service"><option value="">Izaberite tretman</option><option>Signature Facial</option><option>Skin Ritual</option><option>Brow Architecture</option><option>Lash Lift</option><option>Hands / Nails</option></select></div><div class="field"><label>Datum</label><input required name="date" type="date"></div><div class="field"><label>Vreme</label><select required name="time" id="atelierTime"><option value="">Izaberite vreme</option></select></div><div class="field"><label>Email</label><input required name="email" type="email" placeholder="ime@email.com"></div><div class="field full"><label>Napomena</label><textarea name="note" placeholder="Recite nam ako postoji nešto važno za termin."></textarea></div><div class="field full"><label style="display:flex;align-items:flex-start;gap:8px;font:13px var(--sans, sans-serif);letter-spacing:normal;text-transform:none;color:var(--ivory, #f2eee7);font-weight:400;"><input type="checkbox" id="privacyConsent" required style="margin-top:3px;flex-shrink:0;width:auto;"><span style="display:inline;font:13px var(--sans, sans-serif);color:var(--ivory, #f2eee7);text-transform:none;margin-top:0;">Slažem se sa Politikom privatnosti — email se koristi isključivo za odgovor na ovaj zahtev, ni u koje druge svrhe.</span></label></div><button class="btn" type="submit">Pošalji zahtev →</button><div class="success" id="success">Hvala! Proverite svoj mejl.</div></form></div></section>
+<section class="contact" id="contact"><div class="wrap"><div class="contact-grid"><div class="contact-logo">ATELIER.<span class="demo-tag">DEMO</span></div><div><h4>Studio</h4><p>Ovde ide vaša adresa</p></div><div><h4>Hours</h4><p>Uto–Pet 10–20<br>Sub 09–15</p></div><div><h4>Contact</h4><p>Ovde ide vaš telefon<br>Ovde ide vaš email<br>Instagram ↗</p></div></div><div class="footer"><span>© 2026 ATELIER BEAUTY STUDIO</span><span>BEAUTY, WITHOUT THE NOISE.</span></div></div></section>
+</main>
+<script>
+const menu=document.getElementById('menu'),links=document.getElementById('links');menu.onclick=()=>links.classList.toggle('open');links.querySelectorAll('a').forEach(a=>a.onclick=()=>links.classList.remove('open'));
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(x=>obs.observe(x));
+const ATELIER_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzwJFc0HX9LLtr90gtzA7i3Uv0sHYnpGBnlj3R8XoQrQsGhGtkuzoWFMEVtSewAGpu-/exec';
+const atelierForm = document.getElementById('form');
+const atelierTimeEl = document.getElementById('atelierTime');
+
+(function popuniAtelierTermine(){
+  for (let sat = 10; sat <= 19; sat++){
+    ['00','30'].forEach(function(minut){
+      const vreme = String(sat).padStart(2,'0') + ':' + minut;
+      const opt = document.createElement('option');
+      opt.value = vreme; opt.textContent = vreme;
+      atelierTimeEl.appendChild(opt);
+    });
+  }
+})();
+atelierForm.addEventListener('submit', function(e){
+  e.preventDefault();
+  if (!atelierForm.checkValidity()) { atelierForm.reportValidity(); return; }
+
+  const submitBtn = atelierForm.querySelector('button[type="submit"]');
+  const podaci = {
+    name: atelierForm.name.value,
+    phone: atelierForm.phone.value,
+    service: atelierForm.service.value,
+    date: atelierForm.date.value,
+    time: atelierForm.time.value,
+    email: atelierForm.email.value,
+    note: atelierForm.note.value,
+  };
+
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Slanje...';
+
+  fetch(ATELIER_SCRIPT_URL, { method: 'POST', body: JSON.stringify(podaci) })
+    .then(function(res){ return res.json(); })
+    .then(function(res){
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Pošalji zahtev →';
+      if (res.uspesno) {
+        document.getElementById('success').style.display = 'block';
+        atelierForm.reset();
+      } else {
+        alert(res.poruka || 'Došlo je do greške. Pokušajte ponovo.');
+      }
+    })
+    .catch(function(){
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Pošalji zahtev →';
+      alert('Došlo je do greške pri slanju. Proverite konekciju.');
+    });
+});
+</script>
+</body></html>
